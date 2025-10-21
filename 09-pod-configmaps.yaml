@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod #kind as pod
+metadata: 
+  name: nginx
+
+spec: 
+  containers: 
+  - name: nginx
+    image: nginx
+    envFrom:
+    - configMapRef:
+        name: configMaps #calling from 08-config-map.yaml file
+

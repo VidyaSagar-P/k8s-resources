@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap #kind as configmaps
+metadata:
+  name: configMaps
+data:
+  COURSE: "K8s"
+  DURATION: "15Hrs"
