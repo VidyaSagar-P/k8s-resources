@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nginx-service
   labels:
-    purpose: cluster-ip service 
+    purpose: cluster-ip-service 
     project: roboshop
 spec:
   selector:
