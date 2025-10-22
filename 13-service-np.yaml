@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-np-service
+  project: roboshop
+  labels:
+    purpose: np-service-practice
+spec:
+  selector:
+    name: nginx  # taken from 02-nginx.yaml pod
+    project: roboshop
+    environment: dev
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80 # service port
+      targetPort: 80 # app/container port
