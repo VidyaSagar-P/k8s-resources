@@ -2,13 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-service
-  project: roboshop
   labels:
     purpose: cluster-ip service 
+    project: roboshop
 spec:
   selector:
-    name: nginx
+  # taken from 04-labels.yaml pod
     project: roboshop
+    purpose: labels
     environment: dev
     app: nginx
   ports:

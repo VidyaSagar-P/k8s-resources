@@ -4,6 +4,7 @@ metadata:
   name: nginx-labels
   labels: #lables
     project: roboshop
+    purpose: labels
     environment: dev
     app: nginx
 
