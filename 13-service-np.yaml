@@ -6,6 +6,7 @@ metadata:
     purpose: np-service-practice
     project: roboshop
 spec:
+  type: NodePort
   selector:
   # taken from 04-labels.yaml pod
     project: roboshop
