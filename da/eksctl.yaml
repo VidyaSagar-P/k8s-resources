@@ -8,5 +8,5 @@ metadata:
 managedNodeGroups:
   - name: doctor
     instanceTypes: ["m5.large"] #  "m5a.large", "c5.large", "t3.large"
-    desiredCapacity: 3
-    spot: true
+    desiredCapacity: 2
+    # spot: true
