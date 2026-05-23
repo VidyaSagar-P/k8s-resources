@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotations
+  labels:
+    project: practice
+    env: dev
+  annotations:
+    url: "https://github.com/VidyaSagar-P/k8s-resources.git"
