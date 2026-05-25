@@ -7,7 +7,7 @@ metadata:
     module: test
 
 spec: 
-  # if type is not mentioned here then consider it as CLUSTER IP. default one-it is used for internal pod to pod communication
+  type: NodePort
   selector:
     # this service will attaches with pod: labels
     project: practice
