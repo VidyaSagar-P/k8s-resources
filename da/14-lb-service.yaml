@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-service-np
+  name: nginx-service-lb
   labels:
     project: practice
     module: test
